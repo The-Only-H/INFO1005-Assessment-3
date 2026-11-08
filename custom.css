@@ -1,0 +1,504 @@
+/* =========================================
+   SHOUTA AIZAWA - TEACHING PORTFOLIO
+   Custom stylesheet
+   ========================================= */
+
+
+/* COLOUR PALETTE */
+
+:root {
+    --grey: #b1adab;
+    --black: #000000;
+    --gold: #d0a632;
+    --white: #ffffff;
+    --dark-grey: #252525;
+}
+
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    background-color: var(--grey);
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.gold-text {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.section-padding {
+    padding: 85px 0;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    background-color: var(--black);
+    padding: 17px 0;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    font-size: 0.9rem;
+    margin-left: 12px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--gold) !important;
+}
+
+
+/* HERO SECTION */
+
+.hero-section {
+    background-color: var(--grey);
+    padding: 90px 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.05rem;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.hero-photo {
+    width: 100%;
+    max-height: 470px;
+    object-fit: cover;
+    object-position: center;
+    border: 8px solid var(--black);
+    box-shadow: 12px 12px 0 var(--gold);
+}
+
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--black);
+    border: 2px solid var(--gold);
+    padding: 12px 22px;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: var(--black);
+    color: var(--gold);
+    border-color: var(--black);
+}
+
+.btn-outline-dark {
+    border-radius: 3px;
+    padding: 12px 22px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-heading p:not(.eyebrow) {
+    max-width: 650px;
+}
+
+
+/* ABOUT SECTION */
+
+.about-photo {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border: 6px solid var(--black);
+    box-shadow: 10px 10px 0 var(--gold);
+}
+
+#about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    margin-bottom: 15px;
+}
+
+.about-highlight {
+    background-color: var(--black);
+    color: var(--gold);
+    border-left: 5px solid var(--gold);
+    padding: 20px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+/* DARK SECTIONS */
+
+.dark-section {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.dark-section .section-heading h2 {
+    color: var(--white);
+}
+
+
+/* EDUCATION */
+
+.education-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 30px;
+    background-color: var(--dark-grey);
+    border-left: 5px solid var(--gold);
+    border-radius: 4px;
+}
+
+.education-icon {
+    color: var(--gold);
+    font-size: 3rem;
+}
+
+.education-card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* SKILLS */
+
+.skill-card {
+    background-color: var(--grey);
+    border: 2px solid var(--black);
+    padding: 30px;
+    height: 100%;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 7px 7px 0 var(--gold);
+}
+
+.skill-card i {
+    color: var(--gold);
+    background-color: var(--black);
+    padding: 12px;
+    font-size: 1.7rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+
+/* EXPERIENCE */
+
+.experience-card {
+    background-color: var(--dark-grey);
+    border-left: 5px solid var(--gold);
+    padding: 35px;
+    border-radius: 4px;
+}
+
+.experience-card h3 {
+    margin: 15px 0;
+}
+
+.experience-date {
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.experience-card ul {
+    padding-left: 22px;
+}
+
+.experience-card li {
+    margin-bottom: 8px;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio-card {
+    background-color: var(--white);
+    height: 100%;
+    border: 2px solid var(--black);
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0 var(--gold);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-content {
+    padding: 23px;
+}
+
+.project-number {
+    color: #80600b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.portfolio-content h3 {
+    font-size: 1.2rem;
+    margin: 12px 0;
+}
+
+.portfolio-content p {
+    font-size: 0.95rem;
+}
+
+.portfolio-content .btn {
+    margin: 5px 0 0;
+}
+
+
+/* PROJECT MODALS */
+
+.modal-content {
+    border: 3px solid var(--gold);
+    border-radius: 3px;
+}
+
+.modal-header {
+    background-color: var(--black);
+    color: var(--gold);
+}
+
+.modal-title {
+    font-size: 1.2rem;
+}
+
+.modal-body {
+    background-color: var(--grey);
+    padding: 25px;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    margin: 12px 0;
+}
+
+.contact-details i {
+    color: var(--gold);
+    margin-right: 10px;
+}
+
+.contact-details a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: var(--gold);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 35px 0;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+footer small {
+    color: #cccccc;
+}
+
+
+/* ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+
+/* RESPONSIVE DESIGN: TABLETS */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        padding: 65px 0;
+    }
+
+    .hero-image {
+        margin-top: 45px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+}
+
+
+/* RESPONSIVE DESIGN: MOBILE PHONES */
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-photo {
+        max-height: 330px;
+    }
+
+    .btn-outline-dark {
+        margin: 12px 0 0;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .education-card {
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .experience-card {
+        padding: 23px;
+    }
+
+    .portfolio-card img {
+        height: 200px;
+    }
+
+    .skill-card {
+        padding: 23px;
+    }
+
+}
